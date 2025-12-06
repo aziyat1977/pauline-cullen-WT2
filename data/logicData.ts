@@ -130,7 +130,7 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
         type: "lesson",
         title: "4.2 The Referencing Problem",
         content: `
-            <p class="mb-4">A major coherence killer (Band 6) is the unclear use of "It" or "This". A pronoun must refer back to the last noun mentioned.</p>
+            <p class="mb-4">A major coherence killer (Band 6) is the unclear use of "It" or "This". A pronoun must refer to the last noun mentioned.</p>
             
             <div class="bg-red-500/10 p-4 rounded-xl mb-4 border-l-4 border-red-500">
                 <p class="font-bold text-red-400">The Confusion:</p>
@@ -504,6 +504,193 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
     },
     {
         type: "lesson",
+        title: "Lesson 11: Essay Structure - The Introduction",
+        content: `
+            <p class="mb-4"><strong>The Frame:</strong> Your introduction and conclusion work together to frame your argument. The introduction tells the reader what they need to know <em>before</em> reading.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-blue mb-4">
+                <p class="font-bold text-neon-blue">The Danger of Skimming:</p>
+                <p class="mb-2">Many students rush to write and miss the specific issue.</p>
+                <p class="italic text-sm">Question: "Should schools teach behaviour?"</p>
+                <p class="italic text-sm text-red-400">Student writes about: "Education generally" or "Strict discipline".</p>
+            </div>
+            <p><strong>Rule:</strong> Identify the specific <em>issue</em> (e.g., Responsibility), not just the broad <em>topic</em> (Education).</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 9, Page 1-2]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 16: Topic vs Issue",
+        question: "Prompt: 'Some people think that parents should teach children right from wrong. Others think schools should help.' What is the specific issue?",
+        options: [
+            { text: "The importance of education.", correct: false, feedback: "Too broad. This is the general topic, not the issue." },
+            { text: "Who is responsible for teaching behaviour?", correct: true, feedback: "Correct. The debate is about the *source* of the teaching (Parents vs Schools)." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "11.2 The 'General Statement' Trap",
+        content: `
+            <p class="mb-4"><strong>Avoid 'Rehearsed' Openings:</strong> Examiners hate memorized templates like <em>"It is an undeniable fact that..."</em> or <em>"Since the dawn of time..."</em>.</p>
+            <p class="mb-4">Your first sentence must set the context for <strong>this specific essay</strong>.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="font-bold text-red-400">Bad Example:</p>
+                <p class="italic opacity-80">"It is an undeniable fact that eminent personalities are followed by almost everyone since the days bygone."</p>
+                <p class="text-xs mt-2">Why? It's unnatural, archaic ("days bygone"), and clearly memorized filler.</p>
+            </div>
+             <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 9, Page 3]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 17: Opening Sentences",
+        question: "Which is the most effective opening sentence for an essay about 'Celebrity Role Models'?",
+        options: [
+            { text: "It is true that when ambitious people follow their dreams, they achieve goals.", correct: true, feedback: "Correct. It sets a context relevant to the prompt without using a cliché template." },
+            { text: "This is a controversial topic that is often debated.", correct: false, feedback: "Incorrect. This is a generic filler sentence that tells the reader nothing." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "11.3 The Synonym Trap",
+        content: `
+            <p class="mb-4"><strong>Do Not Just 'Translate':</strong> Trying to paraphrase by swapping every word with a synonym often changes the meaning.</p>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="bg-red-500/10 p-3 rounded border border-red-500/30">
+                    <p class="text-red-400 font-bold">The Error:</p>
+                    <p class="italic text-sm">"Teenagers" instead of "Children"</p>
+                    <p class="italic text-sm">"Educational Scholars" instead of "Teachers"</p>
+                </div>
+                <div class="bg-green-500/10 p-3 rounded border border-green-500/30">
+                    <p class="text-green-400 font-bold">The Fix:</p>
+                    <p class="italic text-sm">Interpret the meaning. Change the grammar (active to passive) or structure, not just the vocabulary.</p>
+                </div>
+            </div>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 9, Page 4]</span>
+        `
+    },
+     {
+        type: "lesson",
+        title: "11.4 The Conclusion",
+        content: `
+            <p class="mb-4"><strong>The Final Frame:</strong> The conclusion should summarize your main arguments and clearly state your position.</p>
+            <p class="font-bold text-neon-yellow mb-2">Major Error: Introducing New Ideas</p>
+            <p class="mb-4">Do not finish with a "future prediction" or "suggestion" that you never discussed in the body paragraphs. This is a Band 6 Coherence error.</p>
+            <p><strong>Check:</strong> Look at your first and last sentences of body paragraphs. Your conclusion should just be a summary of these.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 9, Page 8]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 18: Conclusion Logic",
+        question: "Is it acceptable to write: 'In conclusion... the government should therefore introduce new laws next year' if you haven't discussed laws in your essay?",
+        options: [
+            { text: "Yes, it shows critical thinking.", correct: false },
+            { text: "No, this is a 'New Idea'.", correct: true, feedback: "Correct. Conclusions must validly conclude the arguments made, not start new ones." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 12: The Thinking Phase",
+        content: `
+            <p class="mb-4"><strong>Developing Ideas:</strong> Many students' minds go blank because they panic. The solution is to use what you know to deal with the unknown.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-secondary mb-4">
+                <p class="font-bold text-neon-secondary">The 'Imagine' Strategy</p>
+                <p class="mb-2 text-sm">Task: "Problems of living abroad."</p>
+                <p class="italic opacity-80">Method: Visualize yourself there. What would you miss? Your friends? Family? The culture? This turns abstract concepts into concrete ideas.</p>
+            </div>
+            <p><strong>Brainstorming vs Planning:</strong> Brainstorming is messy (getting ideas out). Planning is selecting the best ones and organizing them.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 10, Page 1]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "12.2 Selection & Rejection",
+        content: `
+            <p class="mb-4">"The best way to have good ideas is to have lots of ideas and throw away the bad ones." - Linus Pauling</p>
+            <p class="mb-4">You must ruthlessly <strong>Reject</strong> ideas that are irrelevant or too personal to be explained clearly.</p>
+            <div class="bg-red-500/10 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="font-bold text-red-400">The 'Dog' Example:</p>
+                <p class="italic opacity-80">"I would have to leave my children and my dog."</p>
+                <p class="text-xs mt-2 text-red-300">Too specific/personal. Better to generalize this into "Missing family" or "Loneliness".</p>
+            </div>
+             <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 10, Page 6]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 19: Selecting Ideas",
+        question: "For an essay on 'The disadvantages of tourism', which idea should you REJECT?",
+        options: [
+            { text: "Increased pollution and littering.", correct: false, feedback: "Keep this. It is a clear, relevant, major disadvantage." },
+            { text: "I once lost my wallet in Paris.", correct: true, feedback: "Correct. Reject this. It is a personal anecdote, not a general argument." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 13: Advanced Planning - 'Yes, BUT'",
+        content: `
+            <p class="mb-4">When planning your 'Side B' (Advantages), use concession to show critical thinking.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-yellow mb-4">
+                <p class="font-bold text-neon-yellow">The 'Yes, BUT' Method:</p>
+                <p class="italic opacity-80">"Yes, living abroad is expensive..." (Concession)</p>
+                <p class="font-bold mt-1 text-neon-primary">"...BUT you can get a job to pay for it." (Refutation)</p>
+            </div>
+            <p>This structure helps you build a strong argument that acknowledges the other side while maintaining your position.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 10, Page 12]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 20: Connection Logic",
+        question: "What is the best way to connect these two ideas in a plan? (1) Learning a language is hard. (2) It leads to better career prospects.",
+        options: [
+            { text: "Idea 1 AND Idea 2 (Adding)", correct: false, feedback: "No, they are contrasting ideas (Difficulty vs Reward)." },
+            { text: "Idea 1 BUT Idea 2 (Concession)", correct: true, feedback: "Correct. 'It is hard, BUT it is worth it.' This is a stronger argument structure." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 14: The Final Stages (Write & Check)",
+        content: `
+            <p class="mb-4"><strong>Step 3: Write.</strong> If you have planned well (TPWC), writing is just translating your plan into sentences. Planning IS writing.</p>
+            <p class="mb-4"><strong>Step 4: Check.</strong> You must reserve time to check. The best method?</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-blue mb-4">
+                <p class="font-bold text-neon-blue">The 'Read Aloud' Technique:</p>
+                <p class="italic opacity-80">"Read your essay in a whisper. Your inner ear will hear 'clunky' grammar and repetition that your eyes might miss."</p>
+            </div>
+            <p>If you have to pause for breath in the middle of a sentence, it is probably too long.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Step 4 Check, Page 3]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 15: The Psychology of Performance",
+        content: `
+            <p class="mb-4"><strong>Test Anxiety:</strong> Fear interferes with clear thinking. You cannot control the question, but you can control your mindset.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white/5 p-4 rounded-xl">
+                    <p class="font-bold text-neon-primary">Sensory Anchors</p>
+                    <p class="text-sm mt-2">Use a specific scent (like peppermint or lavender) while studying. Use it again in the exam to trigger "Focus Mode".</p>
+                </div>
+                <div class="bg-white/5 p-4 rounded-xl">
+                    <p class="font-bold text-neon-secondary">Routine</p>
+                    <p class="text-sm mt-2">Treat practice like a rehearsal. Clear your desk. No phone. Train your brain for the specific conditions of the test.</p>
+                </div>
+            </div>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Section Two, Page 9-10]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 21: Performance Strategy",
+        question: "You see the exam question and your mind goes blank with panic. What should you do?",
+        options: [
+            { text: "Start writing immediately to stop wasting time.", correct: false, feedback: "This leads to rambling and Band 5/6 Task Response." },
+            { text: "Stop. Breathe. Use the 'Imagine' strategy (Lesson 12) to generate ideas.", correct: true, feedback: "Correct. Anxiety blocks logic. You must calm the mind to access your planning skills." }
+        ]
+    },
+    {
+        type: "lesson",
         title: "Course Complete",
         content: `
             <p class="mb-4"><strong>Summary:</strong> You have completed the Logic & Structure module.</p>
@@ -511,9 +698,10 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
             <ul class="list-disc list-inside space-y-2 mb-8 opacity-80">
                 <li>Valid vs Invalid Arguments</li>
                 <li>Argument Structures (Contrast, Domino)</li>
-                <li>Referencing & Cohesion</li>
-                <li>The PEEL Method</li>
-                <li>Relevance Checking</li>
+                <li>The PEEL Method & Paragraph Progression</li>
+                <li>The TPWC Process (Think, Plan, Write, Check)</li>
+                <li>Idea Selection (Rejection) & Refutation (Yes, BUT)</li>
+                <li>Test Day Psychology & Mindset</li>
             </ul>
             <div class="text-center">
                 <p class="font-display font-bold text-2xl text-neon-secondary">MISSION ACCOMPLISHED</p>

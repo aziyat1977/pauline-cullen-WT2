@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Check, X, ArrowRight, Brain } from 'lucide-react';
@@ -72,7 +73,7 @@ export const LogicDojo: React.FC<LogicDojoProps> = ({ onExit, onComplete }) => {
                     </button>
                     <div>
                         <h1 className="font-display font-bold text-xl tracking-widest text-neon-primary uppercase">
-                            Logic & Structure <span className="text-xs opacity-50 ml-2">UNITS 1-5</span>
+                            Logic & Structure <span className="text-xs opacity-50 ml-2">UNITS 1-15</span>
                         </h1>
                         <div className="w-48 h-1 bg-gray-800 rounded-full mt-2 overflow-hidden">
                             <motion.div 
