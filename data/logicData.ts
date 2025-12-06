@@ -691,17 +691,173 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
     },
     {
         type: "lesson",
+        title: "Lesson 16: The 'Who' Distraction",
+        content: `
+            <p class="mb-4"><strong>The Trap:</strong> Task prompts often mention 'Some experts believe...' or 'Some people think...'.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-primary mb-4">
+                <p class="font-bold text-red-400">The Mistake:</p>
+                <p class="italic opacity-80">"Proponents of this contention point out that..." or "Those who opine that..."</p>
+            </div>
+            <p class="mb-4"><strong>The Truth:</strong> You are not being asked <em>why</em> experts believe it. You are asked <em>if it is true</em>. Do not discuss the "anonymous people". Discuss the <strong>argument</strong> itself.</p>
+            <p class="text-sm opacity-80">Ignore the "experts" in the prompt. They are just a vehicle for the argument.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 14, Page 1]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 17: The Expert Trap",
+        content: `
+            <p class="mb-4"><strong>Too Much Knowledge?</strong> If you are an expert on the topic (e.g., a language teacher writing about language learning), you might have <em>too many</em> ideas.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-yellow mb-4">
+                <p class="font-bold text-neon-yellow">The Risk:</p>
+                <p class="italic opacity-80">Writing a complex, discursive essay that tries to share all your professional knowledge, instead of a structured IELTS argument.</p>
+            </div>
+            <p><strong>Strategy:</strong> If you find yourself writing from personal expertise rather than planning a balanced argument, STOP. Restart. Cut irrelevant ideas.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 14, Page 2]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 18: Introduction Anatomy",
+        content: `
+            <p class="mb-4">An Introduction must begin with the <strong>General Topic</strong>, then narrow to the <strong>Focus</strong>.</p>
+            <div class="space-y-4">
+                <div class="bg-white/5 p-3 rounded-lg">
+                    <p class="text-xs uppercase tracking-widest opacity-50">The Question</p>
+                    <p class="italic font-bold">"Better to learn a language at Primary School vs Secondary School?"</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-sm">
+                    <div class="bg-neon-blue/10 p-2 rounded border border-neon-blue/30">
+                        <span class="block font-bold text-neon-blue">General Topic</span>
+                        Education / Languages
+                    </div>
+                    <div class="bg-neon-primary/10 p-2 rounded border border-neon-primary/30">
+                        <span class="block font-bold text-neon-primary">Issue</span>
+                        Best time to start?
+                    </div>
+                    <div class="bg-neon-yellow/10 p-2 rounded border border-neon-yellow/30">
+                        <span class="block font-bold text-neon-yellow">Focus</span>
+                        Children / Schools
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 text-sm"><strong>Common Error:</strong> Writing an introduction about "The importance of English in the world" (Too general) or "Teaching children at home" (Wrong focus).</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 14, Page 3]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 22: Identifying Focus",
+        question: "Prompt: 'Some people believe parents should teach strict discipline.' What is the wrong focus?",
+        options: [
+            { text: "The role of parents in upbringing.", correct: false, feedback: "This is relevant." },
+            { text: "The history of school punishments.", correct: true, feedback: "Correct. This focuses on schools/history, whereas the prompt asks about *parents*." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 19: Thesis Statements",
+        content: `
+            <p class="mb-4">Your thesis statement (your opinion) must be precise. Avoid vague "scope" sentences that say nothing.</p>
+            <div class="bg-red-500/10 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="font-bold text-red-400">Weak Thesis:</p>
+                <p class="italic">"This essay will analyse the advantages and disadvantages and show my opinion."</p>
+                <p class="text-xs mt-1">Too formulaic. Band 6.</p>
+            </div>
+            <div class="bg-green-500/10 p-4 rounded-xl border-l-4 border-green-500 mb-4">
+                <p class="font-bold text-green-400">Strong Thesis:</p>
+                <p class="italic">"While I think there are drawbacks to learning a language too early, I believe the advantages of this outweigh the disadvantages."</p>
+                <p class="text-xs mt-1">Clear position + Outline of argument structure (Concession).</p>
+            </div>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 14, Page 6]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 20: The 'High-Level' Vocabulary Trap",
+        content: `
+            <p class="mb-4"><strong>The Spade Analogy:</strong> Band 6 students often try to "boost" their score by using complex words they don't fully control.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-primary mb-4">
+                <p class="font-bold text-neon-primary">Band 9 (Natural/Sophisticated):</p>
+                <p class="italic">"This is a common or garden spade."</p>
+            </div>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="font-bold text-red-400">Band 6 (Forced/Inaccurate):</p>
+                <p class="italic">"The excavation digging implement is lying in the adjacent space."</p>
+            </div>
+            <p><strong>Rule:</strong> Precision is better than complexity. "Digging implement" is vague. "Spade" is precise. Don't hide your meaning under big words.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 15, Page 4]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 23: Natural Phrasing",
+        question: "Which sentence shows better Lexical Resource?",
+        options: [
+            { text: "Students encounter formidable tribulations with the curriculum.", correct: false, feedback: "Too forced. 'Formidable tribulations' is unnatural here." },
+            { text: "Students find the curriculum difficult to cope with.", correct: true, feedback: "Correct. 'Cope with' is a precise, natural collocation. [Source: Page 5]" }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 21: Grammar - Active vs Passive",
+        content: `
+            <p class="mb-4"><strong>The Passive Trap:</strong> Students often use passive voice to sound 'academic', but it often just adds clutter.</p>
+            <div class="grid grid-cols-1 gap-4 mb-4">
+                <div class="bg-red-500/10 p-3 rounded border border-red-500/30">
+                    <p class="text-red-400 font-bold">Wordy (Band 6):</p>
+                    <p class="italic text-sm">"It is argued by researchers that..."</p>
+                </div>
+                <div class="bg-green-500/10 p-3 rounded border border-green-500/30">
+                    <p class="text-green-400 font-bold">Direct (Band 8+):</p>
+                    <p class="italic text-sm">"Researchers argue that..."</p>
+                </div>
+            </div>
+            <p><strong>Correction:</strong> "The advantages that <span class='text-red-400 line-through'>lies beneath it</span>" → "The <span class='text-green-400'>underlying</span> advantages."</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 15, Page 3]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 22: Cohesion - 'Namely' vs 'In Fact'",
+        content: `
+            <p class="mb-4"><strong>Wrong Connector:</strong> Many students use "Namely" incorrectly.</p>
+            <p class="mb-2"><strong>Namely:</strong> Used to name a specific list. <br/><em class="opacity-50">"Two students, namely John and Sarah..."</em></p>
+            <p class="mb-4"><strong>In Fact:</strong> Used to provide evidence or emphasize a truth.<br/><em class="opacity-50">"The brain shrinks. In fact, research shows..."</em></p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-yellow">
+                <p class="font-bold text-neon-yellow">Fixing the Essay:</p>
+                <p class="italic text-sm">"<span class='text-red-400 line-through'>Namely</span>, recent research revealed..." → "<strong>In fact</strong>, recent research revealed..."</p>
+            </div>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 15, Page 3 & 10]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 23: Task Response Audit",
+        content: `
+            <p class="mb-4"><strong>Relevance Check:</strong> In the sample essay, the writer used this example:</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="italic opacity-80">"Take the example of overseas students who tend to come and study in the United Kingdom..."</p>
+            </div>
+            <p><strong>Critique:</strong> The essay question is about <strong>Age</strong> (Primary vs Secondary). This example is about <strong>Location</strong> (Study Abroad). It is largely irrelevant to the core debate and weakens the argument.</p>
+            <p class="font-bold text-neon-secondary">Key: Examples must support the specific variable in the question.</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 15, Page 12]</span>
+        `
+    },
+    {
+        type: "lesson",
         title: "Course Complete",
         content: `
             <p class="mb-4"><strong>Summary:</strong> You have completed the Logic & Structure module.</p>
             <p class="mb-6"><strong>Toolkit Acquired:</strong></p>
-            <ul class="list-disc list-inside space-y-2 mb-8 opacity-80">
+            <ul class="list-disc list-inside space-y-2 mb-8 opacity-80 text-sm">
                 <li>Valid vs Invalid Arguments</li>
                 <li>Argument Structures (Contrast, Domino)</li>
                 <li>The PEEL Method & Paragraph Progression</li>
                 <li>The TPWC Process (Think, Plan, Write, Check)</li>
-                <li>Idea Selection (Rejection) & Refutation (Yes, BUT)</li>
-                <li>Test Day Psychology & Mindset</li>
+                <li>Idea Selection & Refutation (Yes, BUT)</li>
+                <li>Intro/Conclusion Traps & Thesis Statements</li>
+                <li>Band 6 Traps (Vocabulary, Grammar, Cohesion)</li>
             </ul>
             <div class="text-center">
                 <p class="font-display font-bold text-2xl text-neon-secondary">MISSION ACCOMPLISHED</p>

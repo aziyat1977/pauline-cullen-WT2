@@ -2,7 +2,6 @@ import { GoogleGenAI, Type } from "@google/genai";
 
 // Safe access to process.env for browser compatibility
 const getApiKey = () => {
-  // Check if process and process.env exist safely
   try {
     if (typeof process !== 'undefined' && process.env && process.env.API_KEY) {
       return process.env.API_KEY;
@@ -22,7 +21,7 @@ const initGenAI = () => {
   return new GoogleGenAI({ apiKey });
 };
 
-export const gradeUserSubmission = async (prompt: string, submission: string, criteria: string) => {
+export const gradeUserSubmission = async (prompt, submission, criteria) => {
   const ai = initGenAI();
   if (!ai) return { score: 0, feedback: "API Key is missing. Cannot grade.", improvedVersion: "" };
 
@@ -38,37 +37,4 @@ export const gradeUserSubmission = async (prompt: string, submission: string, cr
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
-      contents: userPrompt,
-      config: {
-        systemInstruction,
-        responseMimeType: "application/json",
-        responseSchema: {
-          type: Type.OBJECT,
-          properties: {
-            score: { type: Type.NUMBER },
-            feedback: { type: Type.STRING },
-            improvedVersion: { type: Type.STRING }
-          },
-          required: ["score", "feedback", "improvedVersion"]
-        }
-      }
-    });
-
-    const text = response.text;
-    if (text) {
-        // Sanitize response: remove markdown code blocks if present
-        const cleanText = text.replace(/```json\n?|\n?```/g, '').trim();
-        return JSON.parse(cleanText);
-    }
-    throw new Error("Empty response");
-
-  } catch (error) {
-    console.error("Gemini Error:", error);
-    return {
-      score: 0,
-      feedback: "Failed to grade submission. Please try again.",
-      improvedVersion: ""
-    };
-  }
-};
+      model

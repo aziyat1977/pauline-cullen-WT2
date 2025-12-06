@@ -1,4 +1,4 @@
-import { IELTSCriteria } from './types';
+import { IELTSCriteria } from './types.js';
 
 export const LEVELS = [
   {

@@ -1,7 +1,4 @@
 class AudioService {
-  ctx: AudioContext | null;
-  masterGain: GainNode | null;
-
   constructor() {
     this.ctx = null;
     this.masterGain = null;
@@ -9,8 +6,7 @@ class AudioService {
 
   init() {
     if (!this.ctx) {
-      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
-      this.ctx = new AudioContextClass();
+      this.ctx = new (window.AudioContext || window.webkitAudioContext)();
       this.masterGain = this.ctx.createGain();
       this.masterGain.connect(this.ctx.destination);
       this.masterGain.gain.value = 0.3; // volume

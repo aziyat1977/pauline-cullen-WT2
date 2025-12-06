@@ -1,44 +1,35 @@
-export enum IELTSCriteria {
-  TR = 'Task Response',
-  CC = 'Coherence & Cohesion',
-  LR = 'Lexical Resource',
-  GRA = 'Grammatical Range'
+export const IELTSCriteria = {
+  TR: 'Task Response',
+  CC: 'Coherence & Cohesion',
+  LR: 'Lexical Resource',
+  GRA: 'Grammatical Range'
+};
+
+export interface LevelContent {
+  type: string;
+  text: string;
 }
 
 export interface Level {
   id: string;
   title: string;
   description: string;
-  criteria: IELTSCriteria;
+  criteria: string;
   color: string;
-  content: ContentBlock[];
-  challengePrompt: string; // For Gemini Interaction
+  content: LevelContent[];
+  challengePrompt: string;
 }
 
-export interface ContentBlock {
-  type: 'text' | 'tip' | 'myth' | 'example';
+export interface LogicOption {
   text: string;
+  correct: boolean;
+  feedback?: string;
 }
 
-export interface UserState {
-  xp: number;
-  level: number;
-  completedModules: string[];
-  darkMode: boolean;
-  soundEnabled: boolean;
-}
-
-export interface GradingResult {
-  score: number;
-  feedback: string;
-  improvedVersion?: string;
-}
-
-// New Types for Logic Dojo
 export interface LogicSlide {
   type: 'lesson' | 'quiz';
   title: string;
-  content?: string; // HTML/Text content
+  content?: string;
   question?: string;
-  options?: { text: string; correct: boolean; feedback?: string }[];
+  options?: LogicOption[];
 }
