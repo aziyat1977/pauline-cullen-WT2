@@ -1,3 +1,4 @@
+
 import { LogicSlide } from '../types';
 
 export const LOGIC_COURSE_DATA: LogicSlide[] = [
@@ -216,10 +217,6 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
                     <p class="text-sm opacity-70">Will, Would, Could, Might</p>
                 </div>
             </div>
-            <div class="mt-6 text-center p-4 bg-neon-secondary/10 rounded-xl">
-                <p class="font-bold text-neon-secondary">VISIT OUR TELEGRAM PAGE</p>
-                <p class="font-mono text-sm">t.me/letscrackielts</p>
-            </div>
         `
     },
     {
@@ -294,10 +291,230 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
     },
     {
         type: "lesson",
-        title: "Unit Complete",
+        title: "5.3 Jumping to Conclusions",
         content: `
-            <p class="mb-4"><strong>Summary:</strong> You have expanded your logic toolkit with Contrast, Referencing, and Clarification.</p>
-            <p class="mb-6"><strong>Next Step:</strong> In your next essay, try to use "In other words" to simplify a complex point, and check your "It/This" references.</p>
+            <p class="mb-4"><strong class="text-neon-primary">The Speed Trap:</strong> When candidates don't allow time for critical thinking, they jump to conclusions that seem illogical to the reader.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-primary mb-4">
+                <p class="font-bold mb-2">The 'John' Example:</p>
+                <p class="italic opacity-80">"John has arrived late for work every day. <span class="text-red-400">Clearly, he is not committed to his job.</span>"</p>
+            </div>
+            <p class="mb-4"><strong>Reality Check:</strong> The first part is a fact (late). The second is an assumption (attitude). He might have transport issues or a sick child. The conclusion is not valid without more evidence.</p>
+            <span class="text-xs text-gray-500 block mb-2 font-mono">[Source: Page 1]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 11: Valid Conclusions",
+        question: "Fact: 'Many people are spending more time travelling to work.' What is a valid conclusion?",
+        options: [
+            { text: "Clearly, they love driving.", correct: false, feedback: "Incorrect. This is an assumption about their feelings." },
+            { text: "This suggests that traffic congestion is increasing.", correct: true, feedback: "Correct. This is a logical inference based on the time delay." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 6: Supporting Evidence",
+        content: `
+            <p class="mb-4"><strong>Band 7 Requirement:</strong> Ideas must be "fully extended and well-supported".</p>
+            <p class="mb-4"><strong class="text-neon-yellow">Problem 1: Invented Statistics.</strong> Many students invent statistics to "prove" a point.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-yellow mb-4">
+                <p class="font-bold mb-2">The 'Tesla' Error:</p>
+                <p class="italic opacity-80">"For example, a similar initiative resulted in Tesla's taxes reducing by 35%."</p>
+            </div>
+            <p>This looks like an example, but it doesn't support the logic. It just throws a random number at the reader. <strong>Do not use invented statistics.</strong></p>
+            <span class="text-xs text-gray-500 block mb-2 font-mono">[Source: Page 5-6]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 12: Supporting Evidence",
+        question: "Which offers better support for: 'Remote work benefits employees.'",
+        options: [
+            { text: "For example, a study shows 95% of people are happier.", correct: false, feedback: "Avoid invented statistics. They don't explain 'Why'." },
+            { text: "For example, they save time and money by not commuting.", correct: true, feedback: "Correct. This explains the specific mechanism of the benefit." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "6.2 Circular Examples",
+        content: `
+            <p class="mb-4"><strong class="text-neon-secondary">Problem 2: Examples that aren't examples.</strong></p>
+            <p class="mb-2">Examples must provide evidence, not just repeat the claim.</p>
+            <div class="grid grid-cols-1 gap-4 mb-4">
+                <div class="bg-red-500/10 p-3 rounded border border-red-500/30">
+                    <p class="text-red-400 font-bold">The Loop:</p>
+                    <p class="italic text-sm">"Public transport is good. For example, people use it to go to work."</p>
+                </div>
+                <div class="bg-green-500/10 p-3 rounded border border-green-500/30">
+                    <p class="text-green-400 font-bold">The Specific Noun:</p>
+                    <p class="italic text-sm">"Public transport is efficient. For example, <strong>cities like London and Tokyo</strong> have excellent underground trains."</p>
+                </div>
+            </div>
+            <p><strong>Rule:</strong> If you can't name a specific place or object, your example might be too vague.</p>
+            <span class="text-xs text-gray-500 block mb-2 font-mono">[Source: Page 7]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "6.3 Trivial vs Extreme",
+        content: `
+            <p class="mb-4"><strong>Problem 3: The 'Zara Handbag' Fallacy.</strong></p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-primary mb-4">
+                <p class="font-bold mb-2">The Argument:</p>
+                <p class="italic opacity-80 mb-2">"Cheap air travel is good because we can buy Zara handbags. If this stops, the global economy will collapse."</p>
+                <p class="text-sm">Buying a handbag (Trivial) -> Economy Collapse (Extreme). The logic breaks.</p>
+            </div>
+            <p>Do not use a small, trivial example to support a massive, catastrophic conclusion.</p>
+            <span class="text-xs text-gray-500 block mb-2 font-mono">[Source: Page 8]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "6.4 Reversing the Flow",
+        content: `
+            <p class="mb-4"><strong>Alternative Support Structures:</strong> You don't always need a separate sentence starting with "For example".</p>
+            <p class="mb-4"><strong>Method: Evidence First.</strong> State the specific fact, then draw the conclusion.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-blue">
+                <p class="italic">"These funds are used to pay the salaries of firefighters and police. <strong>Thus</strong>, taxes help make the community safer."</p>
+            </div>
+            <p class="mt-4">This helps you avoid starting every sentence with the subject.</p>
+            <span class="text-xs text-gray-500 block mb-2 font-mono">[Source: Page 9]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 13: Structure Check",
+        question: "Identify the structure: 'Local markets sell fresh produce. As a result, they encourage healthier eating habits.'",
+        options: [
+            { text: "Idea → Example", correct: false },
+            { text: "Evidence → Conclusion", correct: true, feedback: "Correct. The specific fact (selling produce) leads to the general conclusion (healthier eating)." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 7: Paragraph Progression",
+        content: `
+            <p class="mb-4"><strong>The House Analogy:</strong> In terms of Task Response, an argument is like a physical structure.</p>
+            <div class="flex justify-around items-end mb-6 h-32">
+                <div class="flex flex-col items-center">
+                    <div class="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-b-[40px] border-b-neon-primary opacity-50"></div>
+                    <div class="w-20 h-20 border-2 border-neon-primary border-t-0 bg-neon-primary/10 flex items-center justify-center text-center text-[10px]">
+                        Band 6<br/>(Incomplete)
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-b-[40px] border-b-neon-secondary"></div>
+                    <div class="w-20 h-20 border-2 border-neon-secondary border-t-0 bg-neon-secondary/10 flex items-center justify-center text-center text-[10px]">
+                        Band 9<br/>(Solid)
+                    </div>
+                </div>
+            </div>
+            <p class="mb-2"><strong>Progression:</strong> Individual arguments must be logically connected. If the connection is missing, the "house" (your essay) is unstable.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-primary">
+                <p class="font-bold text-sm">The "If This Is The Case" Trap:</p>
+                <p class="italic text-xs mt-1">"On the societal level, the results may be catastrophic <span class="text-red-400">if this is the case</span>."</p>
+                <p class="text-xs mt-2 opacity-80">Problem: We don't know what "this" is. The progression stops.</p>
+            </div>
+            <span class="text-xs text-gray-500 block mt-4 font-mono">[Source: Lesson 8, Page 1]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 8: Cohesion & Referencing",
+        content: `
+            <p class="mb-4"><strong>The Pronoun Problem:</strong> A major cause of Band 6 Coherence scores is unclear referencing (they, them, it).</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="font-bold text-red-400">Ambiguous Example:</p>
+                <p class="italic opacity-80">"Children spend the day at school... <strong class="text-red-400">They</strong> can mentor <strong class="text-red-400">them</strong> in many different ways."</p>
+            </div>
+            <p><strong>Analysis:</strong> Who is "They"? The children? The teachers? The schools? <br/>When you have multiple plural nouns (children, schools, teachers), you must use specific nouns, not pronouns.</p>
+            <span class="text-xs text-gray-500 block mt-4 font-mono">[Source: Lesson 8, Page 3]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 14: Referencing Check",
+        question: "Select the clearer version of this sentence: 'Teachers help students. They act as role models.'",
+        options: [
+            { text: "Teachers help students. They act as role models.", correct: false, feedback: "Still vague. 'They' could technically refer to students (the closest noun)." },
+            { text: "Teachers help students. While doing so, these educators act as role models.", correct: true, feedback: "Correct. 'These educators' explicitly refers back to teachers, bridging the two sentences." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 9: The PEEL Method",
+        content: `
+            <p class="mb-4">To ensure your "House" is solid, use the PEEL frame for every body paragraph.</p>
+            <div class="space-y-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded bg-neon-primary flex items-center justify-center font-bold text-black shrink-0">P</div>
+                    <div>
+                        <strong class="block text-neon-primary">Point</strong>
+                        <span class="text-sm opacity-70">The Topic Sentence. Must be clear and simple.</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded bg-neon-blue flex items-center justify-center font-bold text-black shrink-0">E</div>
+                    <div>
+                        <strong class="block text-neon-blue">Explain</strong>
+                        <span class="text-sm opacity-70">Expand the idea. Why is this true?</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded bg-neon-secondary flex items-center justify-center font-bold text-black shrink-0">E</div>
+                    <div>
+                        <strong class="block text-neon-secondary">Example</strong>
+                        <span class="text-sm opacity-70">Specific evidence (not invented stats).</span>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-8 h-8 rounded bg-neon-yellow flex items-center justify-center font-bold text-black shrink-0">L</div>
+                    <div>
+                        <strong class="block text-neon-yellow">Link</strong>
+                        <span class="text-sm opacity-70">Connect back to the essay question.</span>
+                    </div>
+                </div>
+            </div>
+            <span class="text-xs text-gray-500 block mt-4 font-mono">[Source: Lesson 8, Page 6 & 11]</span>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 15: PEEL Structure",
+        question: "In the PEEL method, what is the primary function of the 'Link' (last sentence)?",
+        options: [
+            { text: "To start a new topic for the next paragraph.", correct: false, feedback: "No, that belongs in the next paragraph's Point." },
+            { text: "To ensure the paragraph answers the specific question asked.", correct: true, feedback: "Correct. It frames the paragraph and confirms relevance. [Source: Page 6]" }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "Lesson 10: Task Response & Relevance",
+        content: `
+            <p class="mb-4"><strong>The "Tangent" Trap:</strong> Even with good grammar, you will score Band 6 if your ideas stray from the topic.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-red-500 mb-4">
+                <p class="font-bold text-red-400">Example Failure:</p>
+                <p class="italic opacity-80 mb-2">Topic: Schools teaching behaviour.</p>
+                <p class="italic opacity-80">Student writes: "...children dress up like great leaders. They become curious about these people..."</p>
+            </div>
+            <p><strong>Analysis:</strong> The writer started discussing "copying famous leaders", which is not relevant to "teaching right from wrong". They moved further and further away from the question.</p>
+            <p class="mt-2 text-neon-primary font-bold">Rule: Every sentence must support the Main Idea (Point).</p>
+            <span class="text-xs text-gray-500 block mt-2 font-mono">[Source: Lesson 8, Page 9]</span>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Course Complete",
+        content: `
+            <p class="mb-4"><strong>Summary:</strong> You have completed the Logic & Structure module.</p>
+            <p class="mb-6"><strong>Toolkit Acquired:</strong></p>
+            <ul class="list-disc list-inside space-y-2 mb-8 opacity-80">
+                <li>Valid vs Invalid Arguments</li>
+                <li>Argument Structures (Contrast, Domino)</li>
+                <li>Referencing & Cohesion</li>
+                <li>The PEEL Method</li>
+                <li>Relevance Checking</li>
+            </ul>
             <div class="text-center">
                 <p class="font-display font-bold text-2xl text-neon-secondary">MISSION ACCOMPLISHED</p>
             </div>
