@@ -268,7 +268,7 @@ const App = () => {
   const getActiveLevelData = () => LEVELS.find(l => l.id === activeLevelId);
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 font-sans overflow-hidden ${darkMode ? 'text-white' : 'text-black'}`}>
+    <div className={`min-h-screen transition-colors duration-500 font-sans ${darkMode ? 'text-white' : 'text-black'}`}>
       
       {/* Background is conditional based on route to optimize performance */}
       {route !== 'logic-dojo' && <Background3D darkMode={darkMode} />}
@@ -319,7 +319,7 @@ const App = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 bg-[#0b0b10]"
+                className="fixed inset-0 z-50 bg-[#0b0b10] overflow-y-auto"
             >
                 <LogicDojo 
                     onExit={() => setRoute('modules')} 

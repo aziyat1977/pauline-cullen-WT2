@@ -111,57 +111,196 @@ export const LOGIC_COURSE_DATA: LogicSlide[] = [
         ]
     },
     {
+        type: "lesson",
+        title: "Lesson 4: More Complex Arguments",
+        content: `
+            <p class="mb-4"><strong>Understanding Levels:</strong> Candidates at C1 and C2 (Bands 7-9) have mastered language skills. They know <em>when</em> and <em>how</em> to use language effectively. Complexity comes from the <strong>argument</strong> you make, not just the vocabulary you use.</p>
+            
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-yellow mb-4">
+                <p class="font-bold text-neon-yellow">Method: Arguing by Contrast</p>
+                <p class="mb-2">To find extra ideas, ask yourself: <em>"What would happen if we didn't have/do this?"</em></p>
+                <p class="italic opacity-80">"If the government <strong>does not step in</strong>... then this <strong>can put</strong> even more stress on community programmes..."</p>
+            </div>
+            
+            <p><strong>Point to notice:</strong> High-level writers use modals (<span class="text-neon-blue">can, may</span>) to show certainty, rather than claiming "this WILL destroy society".</p>
+        `
+    },
+    {
+        type: "lesson",
+        title: "4.2 The Referencing Problem",
+        content: `
+            <p class="mb-4">A major coherence killer (Band 6) is the unclear use of "It" or "This". A pronoun must refer back to the last noun mentioned.</p>
+            
+            <div class="bg-red-500/10 p-4 rounded-xl mb-4 border-l-4 border-red-500">
+                <p class="font-bold text-red-400">The Confusion:</p>
+                <p class="italic">"...causes homelessness to rise. In addition, <strong>it</strong> means that house prices remain very high."</p>
+                <p class="text-xs mt-1 text-red-300">Does 'it' refer to homelessness? Or the population rise?</p>
+            </div>
+            
+            <div class="bg-green-500/10 p-4 rounded-xl mb-4 border-l-4 border-green-500">
+                <p class="font-bold text-green-400">The Solution (Paraphrasing):</p>
+                <p class="italic">"In addition, <strong>a lack of accommodation</strong> means that house prices remain very high."</p>
+            </div>
+            <p>This paraphrase acts as a clear bridge between ideas.</p>
+        `
+    },
+    {
         type: "quiz",
-        title: "Drill 6: Certainty & Prediction",
-        question: "Which sentence shows the writer is 100% sure of the result?",
+        title: "Drill 6: Logical Flow",
+        question: "Which sentence logically concludes this paragraph about housing shortages?",
         options: [
-            { text: "If the government helps, this will solve all problems.", correct: true, feedback: "Correct. 'Will' implies 100% certainty (often too strong for IELTS). [Source: Page 10, cite: 193/204]" },
-            { text: "If the government helps, this could improve the situation.", correct: false, feedback: "Incorrect. 'Could' implies possibility (50%), not certainty." }
+            { text: "Thus, housing problems have an impact on everyone in the community.", correct: true, feedback: "Correct. This summarizes the broader impact of the previous points." },
+            { text: "Thus, employment is also a very important issue.", correct: false, feedback: "Incorrect. This introduces a completely new topic abruptly." }
+        ]
+    },
+    {
+        type: "lesson",
+        title: "4.3 Varying Sentence Length",
+        content: `
+            <p class="mb-4">High-level writers mix long complex sentences with shorter ones to create rhythm and clarity. Try reading your paragraph aloud to hear this variety.</p>
+            
+            <p class="mb-2"><strong>Planning Symbols:</strong></p>
+            <div class="grid grid-cols-2 gap-4 font-mono text-sm mb-4">
+                <div class="bg-white/5 p-2 rounded border border-white/10">∴ (therefore / thus)</div>
+                <div class="bg-white/5 p-2 rounded border border-white/10">= (this means)</div>
+                <div class="bg-white/5 p-2 rounded border border-white/10">↑ (rises / increases)</div>
+                <div class="bg-white/5 p-2 rounded border border-white/10">↓ (falls / decreases)</div>
+            </div>
+        `
+    },
+    {
+        type: "lesson",
+        title: "4.4 Tracing Argument Development",
+        content: `
+            <p class="mb-4">Complex paragraphs follow a logical chain. You should be able to label every sentence function.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-blue text-sm font-mono space-y-2">
+                <p><span class="text-neon-primary">[Claim/Cause]</span> Population exceeds housing.</p>
+                <p class="pl-4">↓</p>
+                <p><span class="text-neon-secondary">[Effect 1]</span> Many people have nowhere to live.</p>
+                <p class="pl-4">↓</p>
+                <p><span class="text-neon-yellow">[Effect 2]</span> Pressure on local charities.</p>
+                <p class="pl-4">↓</p>
+                <p><span class="text-white">[Conclusion]</span> Housing problems impact everyone.</p>
+            </div>
+            <p class="mt-4 text-sm opacity-80">The effects serve as supporting evidence. This complexity is hard to control, so planning with symbols is essential.</p>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Language Note: Cause & Result",
+        content: `
+            <p class="mb-4">Avoid repetitive language by reversing your sentence structures (A causes B vs B is result of A).</p>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2"><span class="text-neon-primary">A causes B</span> <span class="opacity-50">→</span> Eating junk food <strong>causes</strong> obesity.</li>
+                <li class="flex items-center gap-2"><span class="text-neon-blue">B is the result of A</span> <span class="opacity-50">→</span> Obesity <strong>is the result of</strong> eating junk food.</li>
+                <li class="flex items-center gap-2"><span class="text-neon-secondary">A can lead to B</span> <span class="opacity-50">→</span> Eating junk food <strong>can lead to</strong> obesity.</li>
+            </ul>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Extra Practice Checklist",
+        content: `
+            <p class="mb-4">Scan your writing for these phrases. Is your position clear?</p>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white/5 p-3 rounded-lg">
+                    <p class="font-bold text-neon-primary">Conditionals</p>
+                    <p class="text-sm opacity-70">If, When, Unless</p>
+                </div>
+                <div class="bg-white/5 p-3 rounded-lg">
+                    <p class="font-bold text-neon-secondary">Results</p>
+                    <p class="text-sm opacity-70">As a result, Result in, Causes</p>
+                </div>
+                <div class="bg-white/5 p-3 rounded-lg">
+                    <p class="font-bold text-neon-yellow">Modals</p>
+                    <p class="text-sm opacity-70">Will, Would, Could, Might</p>
+                </div>
+            </div>
+            <div class="mt-6 text-center p-4 bg-neon-secondary/10 rounded-xl">
+                <p class="font-bold text-neon-secondary">VISIT OUR TELEGRAM PAGE</p>
+                <p class="font-mono text-sm">t.me/letscrackielts</p>
+            </div>
+        `
+    },
+    {
+        type: "lesson",
+        title: "Lesson 5: Explaining & Clarifying",
+        content: `
+            <p class="mb-4"><strong>Fact vs Opinion:</strong> In Task 2, you are discussing an argument (opinion), not verifying facts. There is no "right" answer, only a clear position.</p>
+            <div class="bg-white/5 p-4 rounded-xl border-l-4 border-neon-primary">
+                <p class="font-bold">Avoid Absolutes:</p>
+                <p class="italic text-red-300 line-through">"Eating fruit makes people feel unwell."</p>
+                <p class="text-xs text-red-400 mb-2">Too strong/false. Suggests EVERYONE feels unwell.</p>
+                <p class="italic text-green-400">"Eating fruit <strong>can make some people</strong> feel unwell."</p>
+                <p class="text-xs text-green-300">Accurate usage of modals.</p>
+            </div>
+        `
+    },
+    {
+        type: "lesson",
+        title: "5.2 Perspective & Context",
+        content: `
+            <p class="mb-4">Your argument depends on your perspective (culture, location, experience). Contextualizing your ideas helps the examiner understand your viewpoint.</p>
+            <p class="mb-4 font-mono text-neon-yellow"><strong>Clarifying Phrases:</strong></p>
+            <div class="space-y-4">
+                <div class="bg-white/5 p-4 rounded-xl">
+                    <p class="font-bold text-neon-blue">"This means that..."</p>
+                    <p class="italic text-sm mt-1">"Many cities have more people than houses. <strong>This means that</strong> many people do not have anywhere to live."</p>
+                    <p class="text-xs opacity-60 mt-1">Function: Explaining a consequence.</p>
+                </div>
+                <div class="bg-white/5 p-4 rounded-xl">
+                    <p class="font-bold text-neon-blue">"In other words..."</p>
+                    <p class="italic text-sm mt-1">"The traffic in my city is chaotic. <strong>In other words</strong>, rules are rarely followed."</p>
+                    <p class="text-xs opacity-60 mt-1">Function: Explaining a complex idea simply.</p>
+                </div>
+            </div>
+        `
+    },
+    {
+        type: "quiz",
+        title: "Drill 7: Clarifying Ideas",
+        question: "Identify the function: 'If you have a lot of money you can buy whatever you want, which means that food will never be a problem for you.'",
+        options: [
+            { text: "Explaining the meaning / Consequence", correct: true, feedback: "Correct. 'Which means that' connects the possession of money to the specific consequence regarding food." },
+            { text: "Giving a counter-example", correct: false }
         ]
     },
     {
         type: "quiz",
-        title: "Drill 7: Certainty & Prediction",
-        question: "Which is the safer, Band 7+ way to predict a result?",
+        title: "Drill 8: Clarifying Ideas",
+        question: "Identify the function: 'The possibility of finding the same shops... can be alarming. In other words, every country has its own culture...'",
         options: [
-            { text: "If taxes are raised, it will definitely fix the economy.", correct: false, feedback: "Incorrect. This is an over-generalization and likely untrue." },
-            { text: "If taxes are raised, it could help improve the economy.", correct: true, feedback: "Correct. This uses cautious language (speculation). [Source: Page 10, cite: 195]" }
+            { text: "Explaining/Simplifying a complex idea", correct: true, feedback: "Correct. 'In other words' signals a restatement of the previous point for clarity." },
+            { text: "Adding a statistical fact", correct: false }
         ]
     },
     {
         type: "quiz",
-        title: "Drill 8: Style & Cohesion",
-        question: "Compare these two styles. Which is better for a learner to ensure coherence?",
+        title: "Drill 9: Clarifying Ideas",
+        question: "Identify the function: 'Sharing the cost of education... would prevent taking it for granted. This means that having to pay makes people more sincere.'",
         options: [
-            { text: "Style A: 'Money builds roads. Schools are repaired. Salaries are paid.'", correct: false, feedback: "Incorrect. This 'News Report' style forces the reader to work too hard to find connections. [Source: Page 8, cite: 151-152]" },
-            { text: "Style B: 'Firstly, money builds roads. Secondly, schools are repaired.'", correct: true, feedback: "Correct. Clear signposting makes life easier for the reader/examiner. [Source: Page 8, cite: 158]" }
+             { text: "Clarifying an idea", correct: true, feedback: "Correct. This explains the implication of the previous statement." },
+             { text: "Stating a fact", correct: false }
         ]
     },
     {
         type: "quiz",
-        title: "Drill 9: Complexity",
-        question: "How should you achieve 'complexity' in your writing?",
+        title: "Drill 10: Result & Consequence",
+        question: "Identify the function: 'Local businesses might suffer... This not only means a loss of jobs, but also a loss of traditional products.'",
         options: [
-            { text: "By using very long sentences and obscure words.", correct: false },
-            { text: "By explaining complex ideas (like cause/effect chains) clearly.", correct: true, feedback: "Correct. 'Explaining complex ideas in a clear and simple way will raise your chances of achieving band 7.' [Source: Page 9, cite: 183]" }
-        ]
-    },
-    {
-        type: "quiz",
-        title: "Drill 10: Grammar & Meaning",
-        question: "Analyze: 'Hence, it is convenient for them to influence people for any service.'",
-        options: [
-            { text: "The grammar obscures the meaning.", correct: true, feedback: "Correct. The language problems interfere with the argument. The reader cannot understand the point. [Source: Page 4, cite: 67-68]" },
-            { text: "The meaning is clear despite grammar.", correct: false }
+             { text: "Showing a result or consequence", correct: true, feedback: "Correct. This expands on the consequence of businesses suffering." },
+             { text: "Defining a term", correct: false }
         ]
     },
     {
         type: "lesson",
         title: "Unit Complete",
         content: `
-            <p class="mb-4"><strong>Summary:</strong> You have mastered the validity check (no invented facts, no contradictions) and the three main argument structures.</p>
-            <p class="mb-6"><strong>Next Step:</strong> Review your old essays. Search for 'If', 'When', and 'Will'. Ask yourself: <em>"Am I 100% sure this will happen? Or should I change 'will' to 'could'?"</em></p>
-            <span class="text-xs text-gray-500 block font-mono">[Source: Page 11, citing 214-215]</span>
+            <p class="mb-4"><strong>Summary:</strong> You have expanded your logic toolkit with Contrast, Referencing, and Clarification.</p>
+            <p class="mb-6"><strong>Next Step:</strong> In your next essay, try to use "In other words" to simplify a complex point, and check your "It/This" references.</p>
+            <div class="text-center">
+                <p class="font-display font-bold text-2xl text-neon-secondary">MISSION ACCOMPLISHED</p>
+            </div>
         `
     }
 ];

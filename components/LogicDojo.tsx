@@ -61,7 +61,7 @@ export const LogicDojo: React.FC<LogicDojoProps> = ({ onExit, onComplete }) => {
     };
 
     return (
-        <div className="relative min-h-screen text-white font-sans overflow-hidden">
+        <div className="relative min-h-screen text-white font-sans">
             <LogicBackground />
 
             {/* Header */}
@@ -72,7 +72,7 @@ export const LogicDojo: React.FC<LogicDojoProps> = ({ onExit, onComplete }) => {
                     </button>
                     <div>
                         <h1 className="font-display font-bold text-xl tracking-widest text-neon-primary uppercase">
-                            Logic & Structure <span className="text-xs opacity-50 ml-2">UNIT 2-3</span>
+                            Logic & Structure <span className="text-xs opacity-50 ml-2">UNITS 1-5</span>
                         </h1>
                         <div className="w-48 h-1 bg-gray-800 rounded-full mt-2 overflow-hidden">
                             <motion.div 
@@ -90,8 +90,8 @@ export const LogicDojo: React.FC<LogicDojoProps> = ({ onExit, onComplete }) => {
                 </div>
             </div>
 
-            {/* Content Area */}
-            <div className="relative z-10 container mx-auto px-4 py-8 h-[80vh] flex flex-col justify-center items-center">
+            {/* Content Area - Min-height allows scrolling if content is long */}
+            <div className="relative z-10 container mx-auto px-4 py-24 min-h-[80vh] flex flex-col justify-center items-center">
                 <AnimatePresence mode="wait">
                     <motion.div 
                         key={index}
